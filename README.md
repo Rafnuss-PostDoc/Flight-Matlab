@@ -7,7 +7,12 @@ Matlab package for modelling the flying bird
 1. First create a bird with the class `Bird` (see `./functions/Bird.m`).
 2. Compute the power curve (power as a function of airspeed) with the function `./functions/mechanicalPower`.
 
-## Demo
+## App
+
+Run `app.mlapp`.
+![image](https://user-images.githubusercontent.com/7571260/148291354-284fa5f7-3e70-4b5b-94c5-ee71780daa92.png)
+
+## Vignettes
 
 See `simpleDemo.mlx` in the `/vignettes/` folder.
 
