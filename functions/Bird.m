@@ -35,7 +35,6 @@ classdef Bird
                 else
                     b.type = 'unknown';
                 end
-                e
             else
                 error('Incorrect input to create a bird')
             end
