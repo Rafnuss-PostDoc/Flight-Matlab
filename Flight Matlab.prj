@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3766296067" file="/Users/raphael/Documents/GitHub/Flight-Matlab/Flight Matlab.prj" location="/Users/raphael/Documents/GitHub/Flight-Matlab" name="Flight Matlab" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3852640183" file="/Users/raphael/Documents/GitHub/Flight-Matlab/Flight Matlab.prj" location="/Users/raphael/Documents/GitHub/Flight-Matlab" name="Flight Matlab" target="target.mlapps" target-name="Package App">
     <param.appname>Flight Matlab</param.appname>
     <param.authnamewatermark>Raphaël Nussbaumer</param.authnamewatermark>
     <param.email>rafnuss@gmai.com</param.email>
