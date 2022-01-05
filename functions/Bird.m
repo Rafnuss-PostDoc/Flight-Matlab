@@ -10,11 +10,10 @@ classdef Bird
         wingArea            % wing area, also denoted  [m^2]
         bodyFrontalArea     % body frontal area [m^2]
         basalMetabolicRate  % 
-        
     end
     
     methods
-        function obj = Bird(varargin)
+        function b = Bird(varargin)
             %BIRD Construct an instance of class bird
             
             if numel(varargin)==1 && (ischar(varargin{1})||isstring(varargin{1}))
@@ -22,54 +21,57 @@ classdef Bird
                 birdTable = readtable('bird.csv');
                 id = find(strcmp(birdTable.scientificName,varargin{1}) | strcmp(birdTable.commonName,varargin{1}));
                 assert(~isempty(id),'Input specie not recognized')
-                obj.mass = birdTable.mass(id);
-                obj.wingSpan = birdTable.wingSpan(id);
-                obj.wingAspect = birdTable.wingAspect(id);
-                obj.type = birdTable.type{id};
+                b.mass = birdTable.mass(id);
+                b.wingSpan = birdTable.wingSpan(id);
+                b.wingAspect = birdTable.wingAspect(id);
+                b.type = birdTable.type{id};
             elseif numel(varargin) >=3      
                 % customized bird
-                obj.mass = varargin{1};
-                obj.wingSpan = varargin{2};
-                obj.wingAspect = varargin{3};
+                b.mass = varargin{1};
+                b.wingSpan = varargin{2};
+                b.wingAspect = varargin{3};
                 if numel(varargin)>=4
-                    obj.type = varargin{4};
+                    b.type = varargin{4};
                 else
-                    obj.type = 'unknown';
+                    b.type = 'unknown';
                 end
-                
+                e
             else
                 error('Incorrect input to create a bird')
             end
             
             % Computed variable
-            obj.bodyFrontalArea = BFA(obj);
-            obj.wingArea = obj.wingSpan^2/obj.wingAspect;
-            obj.basalMetabolicRate = BMR(obj);
+            b.bodyFrontalArea = BFA(b);
+            b.wingArea = b.wingSpan^2/b.wingAspect;
+            b.basalMetabolicRate = BMR(b);
         end
         
-        function basalMetabolicRate = BMR(obj)
+        function basalMetabolicRate = BMR(b)
             %BMR compute the basal metabolic rate from empirical equation
-            switch obj.type
+            % Box 8.5
+            switch b.type
                 case "passerine"
-                    basalMetabolicRate = 6.25*obj.mass^0.724;
+                    basalMetabolicRate = 6.25*b.mass^0.724;
                 case "seabird"
-                    basalMetabolicRate = 5.43*obj.mass^0.72; % [Ellis and Gabrielsen, 2002]
+                    basalMetabolicRate = 5.43*b.mass^0.72; % [Ellis and Gabrielsen, 2002]
                 case "bat"
-                    basalMetabolicRate = 3.14*obj.mass^0.744; % [Speakman J.R., Thomas D.W., (2003) Physiological ecology and energetics of bats
+                    basalMetabolicRate = 3.14*b.mass^0.744; % [Speakman J.R., Thomas D.W., (2003) Physiological ecology and energetics of bats
                 otherwise
-                    basalMetabolicRate = 3.79*obj.mass^0.723;
+                    basalMetabolicRate = 3.79*b.mass^0.723;
             end
         end
         
-        function bodyFrontalArea = BFA(obj)
+        function bodyFrontalArea = BFA(b)
             %BMR compute the basal metabolic rate from empirical equation
-            switch obj.type
+            switch b.type
                 case "passerine"
-                    bodyFrontalArea = 0.0129*obj.mass^(0.614);
+                    bodyFrontalArea = 0.0129*b.mass^(0.614);
                 otherwise
-                    bodyFrontalArea = 0.00813*obj.mass^(0.666);
+                    bodyFrontalArea = 0.00813*b.mass^(0.666);
             end
         end
+        
+        
     end
 end
 
