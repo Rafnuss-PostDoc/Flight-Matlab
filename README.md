@@ -1,5 +1,6 @@
-# Flight Matlab
+[![DOI](https://zenodo.org/badge/444424513.svg)](https://zenodo.org/badge/latestdoi/444424513)
 
+# Flight Matlab
 Matlab package for modelling the flying bird
 
 ## Structure
@@ -21,3 +22,6 @@ See `simpleDemo.mlx` in the `/vignettes/` folder.
 - Pennycuick, Colin J. 2008. Modelling the Flying Bird. Vol. 5. Elsevier.
 - Klein Heerenbrink, M., L. C. Johansson, and A. Hedenström. 2015. “Power of the Wingbeat: Modelling the Effects of Flapping Wings in Vertebrate Flight.” Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences 471(2177). doi: 10.1098/rspa.2014.0952.
 - https://github.com/MarcoKlH/afpt-r and https://cran.r-project.org/web/packages/afpt/vignettes/
+
+## Cite as:
+Nussbaumer, R. (2022). Flight-Matlab (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.5883768
