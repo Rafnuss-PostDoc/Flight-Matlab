@@ -1,36 +1,48 @@
 ﻿commonName,scientificName,mass,wingSpan,wingAspect,type
-Mute Swan,Cygnus olor,9.6,2.23,9.2,waterfowl
-Greylag Goose,Anser anser,3.25,1.64,8.5,waterfowl
-Eider,Somateria mollissima,1.63,0.94,8.4,waterfowl
-Red-throated Diver,Gavia stellata,1.24,1.11,12.2,waterfowl
-Brent Goose,Branta bernicla,1.24,1.15,10.7,waterfowl
-Curlew,Numenius arquata,0.72,0.9,6.7,wader
-Wigeon,Anas penelope,0.65,0.8,8.2,waterfowl
-Wood pigeon,Columba palumbus,0.49,0.78,6.5,passerine
-Oystercatcher,Haematopus ostralegus,0.48,0.83,8.7,wader
-Arctic Tern,Haematopus ostralegus,0.11,0.8,11.2,tern
-Song Thrush,Turdus philomelos,0.061,0.34,6,passerine
-Dunlin,Calidris alpina,0.042,0.4,11,wader
-Swift,Apus apus,0.037,0.45,13.2,swift
-Chaffinch,Fringilla coelebs,0.019,0.26,5.3,passerine
-Siskin,Carduelis spinus,0.01,0.21,5.9,passerine
-Willow Warbler,,0.009,0.195,6,passerine
-Tree Pipit,,0.0225,0.26,6,passerine
+Arctic Tern,Haematopus ostralegus,0.11,0.8,11.20,tern
+Black-headed gull,Larus ridibundus ,0.28,0.963,9.41,passerine
+Brent Goose,Branta bernicla,1.24,1.15,10.70,waterfowl
+Chaffinch,Fringilla coelebs,0.019,0.26,5.30,passerine
+Common buzzard ,Buteo buteo ,0.964,1.29,6.55,raptor
 Common Chiffchaff,,0.0075,0.18,6,passerine
-Spotted Flycatcher,,0.016,0.24,6,passerine
-Garden Warbler,,0.0195,0.22,6,passerine
-Common Whitethroat,,0.015,0.21,6,passerine
-European Pied Flycatcher,,0.012,0.23,6,passerine
-Common Redstart,,0.016,0.225,6,passerine
-Wood Warbler,,0.0095,0.22,6,passerine
-Eurasian Blackcap,,0.017,0.23,6,passerine
-Great Reed Warbler,Acrocephalus arundinaceus,0.03,0.26,6,passerine
-Tawny Pipit,Anthus campestris,0.029,0.265,6,passerine
-Eurasian Nightjar,Caprimulgus europaeus,0.075,0.55,6,passerine
-Red-capped Robin-Chat,Cossypha natalensis,0.031,0.35,6,passerine
-Mangrove Kingfisher,Halcyon senegaloides,0.06,0.35,6,passerine
-Woodland Kingfisher,Halcyon senegaloides,0.055,0.35,6,passerine
-Eurasian Wryneck,Jynx torquila,0.034,0.26,6,passerine
-Northern wheatear,Oenanthe oenanthe,0.025,0.27,6,passerine
-Ring Ouzel,Turdus torquatus,0.107,0.4,6,passerine
-Eurasian Hoopoe,Upupa epops,0.063,0.45,6,passerine
+Common gull ,Larus canus ,0.364,1.1,8.77,passerine
+Common Redstart,,0.016,0.225,6.00,passerine
+Common Whitethroat,,0.015,0.21,6.00,passerine
+Curlew,Numenius arquata,0.72,0.9,6.70,wader
+Dunlin,Calidris alpina,0.042,0.4,11.00,wader
+Eider,Somateria mollissima,1.63,0.94,8.40,waterfowl
+Eider ,Somateria mollissima ,1.39,0.978,7.30,waterfowl
+Eurasian Blackcap,,0.017,0.23,6.00,passerine
+Eurasian Hoopoe,Upupa epops,0.063,0.45,6.00,passerine
+Eurasian Nightjar,Caprimulgus europaeus,0.075,0.55,6.00,passerine
+Eurasian Wryneck,Jynx torquila,0.034,0.26,6.00,passerine
+European Pied Flycatcher,,0.012,0.23,6.00,passerine
+Garden Warbler,,0.0195,0.22,6.00,passerine
+Great black-backed gull ,Larus marinus ,1.51,1.66,9.50,gull
+Great Cormorant ,Phalacrocorax carbo,2.56,1.35,8.14,waterfowl
+Great Reed Warbler,Acrocephalus arundinaceus,0.03,0.26,6.00,passerine
+Grey heron ,Ardea cinerea ,1.21,1.6,7.15,aridae
+Greylag Goose,Anser anser,3.25,1.64,8.50,waterfowl
+Herring gull ,Larus argentatus ,0.925,1.35,9.11,gull
+Hooded crow ,Corvus corone ,0.553,0.925,5.82,passerine
+Mangrove Kingfisher,Halcyon senegaloides,0.06,0.35,6.00,passerine
+Mute Swan,Cygnus olor,9.6,2.23,9.20,waterfowl
+Northern wheatear,Oenanthe oenanthe,0.025,0.27,6.00,passerine
+Oystercatcher,Haematopus ostralegus,0.48,0.83,8.70,wader
+Red kite ,Milvus milvus ,0.851,1.5,7.40,raptor
+Red-capped Robin-Chat,Cossypha natalensis,0.031,0.35,6.00,passerine
+Red-throated Diver,Gavia stellata,1.24,1.11,12.20,waterfowl
+Ring Ouzel,Turdus torquatus,0.107,0.4,6.00,passerine
+Siskin,Carduelis spinus,0.01,0.21,5.90,passerine
+Song Thrush,Turdus philomelos,0.061,0.34,6.00,passerine
+Sparrowhawk ,Accipiter nisus ,0.196,0.611,5.81,passerine
+Spotted Flycatcher,,0.016,0.24,6.00,passerine
+Starling ,Sturnus vulgaris ,0.0884,0.384,5.87,passerine
+Swift,Apus apus,0.037,0.45,13.20,swift
+Tawny Pipit,Anthus campestris,0.029,0.265,6.00,passerine
+Tree Pipit,,0.0225,0.26,6.00,passerine
+Wigeon,Anas penelope,0.65,0.8,8.20,waterfowl
+Willow Warbler,,0.009,0.195,6,passerine
+Wood pigeon ,Columba palumbus ,0.495,0.751,7.08,passerine
+Wood Warbler,,0.0095,0.22,6.00,passerine
+Woodland Kingfisher,Halcyon senegaloides,0.055,0.35,6.00,passerine
