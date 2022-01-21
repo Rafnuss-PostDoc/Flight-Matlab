@@ -1,0 +1,62 @@
+<html>  
+<head>
+    <style>     
+        html{     
+        background-color: white;     
+        padding: 5px;     
+        width: 95%;     
+        }     
+        pre {     
+        overflow-x: auto;     
+        white-space: pre-wrap;     
+        white-space: -moz-pre-wrap;     
+        white-space: -pre-wrap;     
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;     
+        }     
+    </style>     
+    
+    <script type="text/javascript">     
+            
+            function setup(htmlComponent) {     
+            
+				htmlComponent.addEventListener("DataChanged", function(event) {     
+				scrollID =  htmlComponent.Data;     
+					if (scrollID != ''){
+						if(scrollID==="bottom"){         
+							scrollToBottom();     
+						} else if(scrollID==="DOWNLOAD_MCRINSTALLER" || scrollID==="BUILD_MISSING" || scrollID==="SAMPLE_GEN" || scrollID==="USER_REQUESTED_PACKAGE"){     
+							document.getElementById(scrollID).scrollIntoView(true);     
+						} else {     
+							//document.body.innerHTML = document.body.innerHTML + scrollID;     
+							document.body.appendChild(scrollID);                 
+							scrollToBottom();     
+						}    
+						htmlComponent.Data = '';
+					}		
+				});          
+            }     
+            function scrollToBottom(){     
+            var scrollingElement = (document.scrollingElement || document.body);     
+            scrollingElement.scrollTop = scrollingElement.scrollHeight;     
+            }     
+            
+    </script> 
+</head>
+ <body><meta charset="UTF-8">        
+ <pre><font color=blue>mcc -W 'webapp:app,CONFIG:/private/var/folders/1x/jf29x3qj68g847vs42xhmcxm0000gq/T/tpf36ba81f_a21c_450e_8533_f3731db83c42.xml' -d /Users/raphael/Documents/GitHub/Flight-Matlab/app -v -C /Users/raphael/Documents/GitHub/Flight-Matlab/app.mlapp</font>
+Compiler version: 8.2 (R2021a)
+Analyzing file dependencies. 
+[Warning: Web apps that generate additional windows or apps are currently not supported. Check the following .mlapp files for window and
+app dependencies:
+/Users/raphael/Documents/GitHub/Flight-Matlab/app.mlapp] 
+[Warning: In "/Users/raphael/Documents/GitHub/Flight-Matlab/app.mlapp", "syms" are excluded from packaging for the MATLAB Runtime
+environment according to the MATLAB Compiler license. Either remove the file or function from your code, or use the MATLAB function
+"isdeployed" to ensure the function is not invoked in the deployed component.] 
+[Warning: In "/Users/raphael/Documents/GitHub/Flight-Matlab/functions/mechanicalPower.m", "syms" are excluded from packaging for the
+MATLAB Runtime environment according to the MATLAB Compiler license. Either remove the file or function from your code, or use the
+MATLAB function "isdeployed" to ensure the function is not invoked in the deployed component.] 
+Parsing file "/Users/raphael/Documents/GitHub/Flight-Matlab/app.mlapp"
+	(referenced from command line).
+
+</pre></body></html>

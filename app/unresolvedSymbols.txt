@@ -1,0 +1,3 @@
+Path	Symbol	Reason
+app/app.mlapp	syms	undeployable
+app/functions/mechanicalPower.m	syms	undeployable
